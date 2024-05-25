@@ -17,3 +17,5 @@ This document contains the following sections:
 
 5. Data Dictionary
    - Detailed description of the data entities and attributes used in the project
+
+**Please use the README files in Respective folders for Process to Use the Application**
