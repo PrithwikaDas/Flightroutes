@@ -74,7 +74,13 @@ const Map = ({ waypoints, planeposition }) => {
       // Save instance to state:
       setRoutingMachine(RoutingMachineRef.current);
     }
-  }, [map, waypoints]);
+  }, [map]);
+
+  useEffect(() => {
+    if (RoutingMachineRef?.current) {
+      RoutingMachineRef?.current?.setWaypoints(waypoints);
+    }
+  }, [waypoints]);
 
   // Once routing machine instance is ready, add to map:
   useEffect(() => {
